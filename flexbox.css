@@ -1,0 +1,137 @@
+header{
+    text-align: center;
+}
+
+body{
+    background: hsla(0, 0%, 100%, 0.75);
+}
+
+h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-stretch: extra-condensed;
+    font-weight: 700;
+}
+
+a{
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-stretch: extra-condensed;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container div{
+    padding: 40px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    height: 50%;
+}
+
+.box1{
+    flex: 1;
+    flex-shrink: 0;
+    background: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border-radius: 5px 0 0 5px;
+}
+
+.box2{
+    flex: 1;
+    flex-shrink: 0;
+    background: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.box3{
+    flex: 1;
+    flex-shrink: 0;
+    background: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border-radius: 0 5px 5px 0;
+}
+
+button{
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background: hsla(0, 0%, 100%, 0.75);
+}
+
+.b1{
+    color: hsl(31, 77%, 52%);
+}
+
+.b2{
+    color: hsl(184, 100%, 22%);
+}
+
+.b3{
+    color: hsl(179, 100%, 13%);
+}
+
+.b1:hover{
+    background: hsl(31, 77%, 52%);
+    color: white;
+    border: 1px white solid;
+}
+
+.b2:hover{
+    background: hsl(184, 100%, 22%);
+    color: white;
+    border: 1px white solid;
+}
+
+.b3:hover{
+    background: hsl(179, 100%, 13%);
+    color: white;
+    border: 1px white solid;
+}
+
+@media only screen and (max-width:730px) {
+    .container{
+        flex-direction: column;
+        height: auto;
+        width: 35%;
+    }
+    .box1{
+        border-radius: 5px 5px 0 0;
+        margin-top: 30px;
+    }
+    .box3{
+        border-radius: 0 0 5px 5px;
+    }
+    button{
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width:646px) {
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+    .container div{
+        padding: 20px;
+    }
+    .box1{
+        width: 90%;
+    }
+    .box2{
+        width: 90%;
+    }
+    .box3{
+        width: 90%;
+    }
+}
