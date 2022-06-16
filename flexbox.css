@@ -39,7 +39,7 @@ a{
 }
 
 .box1{
-    flex: 1;
+    flex: 30%;
     flex-shrink: 0;
     background: hsl(31, 77%, 52%);
     color: hsla(0, 0%, 100%, 0.75);
@@ -47,14 +47,14 @@ a{
 }
 
 .box2{
-    flex: 1;
+    flex: 30%;
     flex-shrink: 0;
     background: hsl(184, 100%, 22%);
     color: hsla(0, 0%, 100%, 0.75);
 }
 
 .box3{
-    flex: 1;
+    flex: 30%;
     flex-shrink: 0;
     background: hsl(179, 100%, 13%);
     color: hsla(0, 0%, 100%, 0.75);
@@ -99,7 +99,7 @@ button{
     border: 1px white solid;
 }
 
-@media only screen and (max-width:730px) {
+@media only screen and (max-width:1000px) {
     .container{
         flex-direction: column;
         height: auto;
@@ -121,17 +121,22 @@ button{
     .container{
         flex-direction: column;
         height: auto;
+        margin: auto;
     }
     .container div{
         padding: 20px;
+        margin: 0;
     }
     .box1{
-        width: 90%;
+        width: 100%;
+        margin: 0;
     }
     .box2{
-        width: 90%;
+        width: 100%;
+        margin: 0;
     }
     .box3{
-        width: 90%;
+        width: 100%;
+        margin: 0;
     }
 }
